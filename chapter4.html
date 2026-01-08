@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Statistical Inference">
+    <meta name="description" content="">
+    <title>Statistical Inference</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="index.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 8.1.4, nicepage.com">
+
+    <link id="u-page-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/default-logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Statistical Inference">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body class="u-body u-clearfix u-xl-mode" data-lang="en">
+    <header class="u-clearfix u-header u-header" id="header">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <a href="index.html" class="u-image u-logo u-image-1">
+                <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+            </a>
+            <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" role="navigation" aria-label="Menu navigation">
+                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="#" tabindex="-1" aria-label="Open menu" aria-controls="8bd3">
+                        <svg class="u-svg-link" viewBox="0 0 24 24">
+                            <use xlink:href="#menu-hamburger"></use>
+                        </svg>
+                        <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect y="1" width="16" height="2"></rect>
+                                <rect y="7" width="16" height="2"></rect>
+                                <rect y="13" width="16" height="2"></rect>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container">
+                    <ul class="u-nav u-unstyled u-nav-1" role="menubar">
+                        <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                                href="index.html" style="padding: 10px 20px;">Home</a>
+                        </li>
+
+                        <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                                href="theory.html" style="padding: 10px 20px;">Theory</a>
+                        </li>
+                        </li>
+                        <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                                href="lab.html" style="padding: 10px 20px;">Lab</a>
+                        </li>
+                        <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                                href="#" style="padding: 10px 20px;">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse" id="8bd3" role="region" aria-label="Menu panel">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                            <div class="u-menu-close" tabindex="-1" aria-label="Close menu"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2" role="menubar">
+                                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                        class="u-button-style u-nav-link" href="index.html">Home</a>
+                                </li>
+                                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                        class="u-button-style u-nav-link" href="#">About</a>
+                                </li>
+                                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                        class="u-button-style u-nav-link" href="theory.html">Theory</a>
+                                </li>
+                                </li>
+                                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                        class="u-button-style u-nav-link" href="lab.html">Lab</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="u-clearfix u-section-1">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-text u-text-default u-title">Chapter 4: Statistical Inference</h1>
+            <div class="u-container-style u-white u-radius-20 u-shape-round"
+                style="padding: 30px; margin-top: 20px; color: #111;">
+                <div class="u-container-layout">
+                    <p class="u-text u-text-3"><b>Planned Hours:</b> 08</p>
+
+                    <h2 class="u-text u-text-default u-text-5">1. Advantages of Sampling (CO3 – L1)</h2>
+                    <p class="u-text u-text-6">Sampling is used instead of census because:</p>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 20px;">
+                        <tr style="border-bottom: 1px solid #ccc;">
+                            <th style="padding: 10px; text-align: left;">Advantage</th>
+                            <th style="padding: 10px; text-align: left;">Explanation</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Saves time</td>
+                            <td style="padding: 10px;">Data collected faster</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Reduces cost</td>
+                            <td style="padding: 10px;">Less manpower and money</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Practical</td>
+                            <td style="padding: 10px;">Census impossible for large populations</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Accuracy</td>
+                            <td style="padding: 10px;">Proper sampling gives reliable results</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Feasible</td>
+                            <td style="padding: 10px;">Works when population is infinite</td>
+                        </tr>
+                    </table>
+
+                    <h2 class="u-text u-text-default u-text-7">2. SRSWR and SRSWOR (CO3 – L2)</h2>
+
+                    <h3 class="u-text u-text-default u-text-8">(a) SRSWR – Simple Random Sampling With Replacement</h3>
+                    <ul class="u-text u-text-9">
+                        <li>Each unit is replaced after selection.</li>
+                        <li>Probability of selection remains constant.</li>
+                        <li>Same item can appear multiple times.</li>
+                    </ul>
+                    <p class="u-text u-text-10"><b>P(each unit) = 1 / N</b></p>
+
+                    <h3 class="u-text u-text-default u-text-11">(b) SRSWOR – Simple Random Sampling Without Replacement
+                    </h3>
+                    <ul class="u-text u-text-12">
+                        <li>No replacement after selection.</li>
+                        <li>Each unit appears only once.</li>
+                        <li>Probability changes after each draw.</li>
+                    </ul>
+
+                    <h2 class="u-text u-text-default u-text-13">3. Cluster Sampling vs Stratified Sampling (CO3 – L2)
+                    </h2>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 20px;">
+                        <tr style="border-bottom: 1px solid #ccc;">
+                            <th style="padding: 10px; text-align: left;">Stratified Sampling</th>
+                            <th style="padding: 10px; text-align: left;">Cluster Sampling</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Population divided into homogeneous strata</td>
+                            <td style="padding: 10px;">Population divided into clusters</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Samples drawn from every stratum</td>
+                            <td style="padding: 10px;">Few clusters selected randomly</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">More accurate</td>
+                            <td style="padding: 10px;">Less expensive</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Example: Class divided into boys & girls</td>
+                            <td style="padding: 10px;">Example: Random classrooms selected</td>
+                        </tr>
+                    </table>
+
+                    <h2 class="u-text u-text-default u-text-14">4. Basic Terminologies of Testing Hypothesis (CO3 – L1)
+                    </h2>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 20px;">
+                        <tr style="border-bottom: 1px solid #ccc;">
+                            <th style="padding: 10px; text-align: left;">Term</th>
+                            <th style="padding: 10px; text-align: left;">Meaning</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Null Hypothesis (H₀)</td>
+                            <td style="padding: 10px;">Statement to be tested</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Alternative Hypothesis (H₁)</td>
+                            <td style="padding: 10px;">Opposite of H₀</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Level of Significance (α)</td>
+                            <td style="padding: 10px;">Probability of rejecting true H₀</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Test Statistic</td>
+                            <td style="padding: 10px;">Value calculated from sample</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Critical Region</td>
+                            <td style="padding: 10px;">Region where H₀ is rejected</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">P-value</td>
+                            <td style="padding: 10px;">Probability of observed result</td>
+                        </tr>
+                    </table>
+
+                    <h2 class="u-text u-text-default u-text-15">5. Confidence Interval & Sample Size (CO3 – L2)</h2>
+
+                    <h3 class="u-text u-text-default u-text-16">(a) CI for Mean (σ known)</h3>
+                    <p class="u-text u-text-17">x&#772; ± Z<sub>α/2</sub> (σ / √n)</p>
+
+                    <h3 class="u-text u-text-default u-text-18">(b) CI for Proportion</h3>
+                    <p class="u-text u-text-19">p ± Z<sub>α/2</sub> √(pq / n)</p>
+
+                    <h3 class="u-text u-text-default u-text-20">Sample Size Formula</h3>
+                    <p class="u-text u-text-21">n = (Z<sub>α/2</sub>² σ²) / E²</p>
+                    <p class="u-text u-text-22">Where E = margin of error.</p>
+
+                    <h2 class="u-text u-text-default u-text-23">6. Hypothesis Testing for Proportion & Mean (CO3 – L3)
+                    </h2>
+
+                    <h3 class="u-text u-text-default u-text-24">(a) Z-Test for Proportion</h3>
+                    <p class="u-text u-text-25">Z = (p - P) / √(PQ / n)</p>
+
+                    <h3 class="u-text u-text-default u-text-26">(b) Z-Test for Mean (σ known)</h3>
+                    <p class="u-text u-text-27">Z = (x&#772; - μ) / (σ / √n)</p>
+
+                    <h3 class="u-text u-text-default u-text-28">(c) t-Test for Mean (σ unknown, small n)</h3>
+                    <p class="u-text u-text-29">t = (x&#772; - μ) / (s / √n)</p>
+
+                    <h3 class="u-text u-text-default u-text-30">(d) Test for Difference of Means</h3>
+                    <p class="u-text u-text-31">Z = (x&#772;<sub>1</sub> - x&#772;<sub>2</sub>) / √((σ<sub>1</sub>² /
+                        n<sub>1</sub>) + (σ<sub>2</sub>² / n<sub>2</sub>))</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="footer">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the Text Element.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

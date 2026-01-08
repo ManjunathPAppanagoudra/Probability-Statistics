@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Random Variables and Probability Distributions">
+    <meta name="description" content="">
+    <title>Random Variables and Probability Distributions</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="index.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 8.1.4, nicepage.com">
+
+    <link id="u-page-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/default-logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Random Variables and Probability Distributions">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body class="u-body u-clearfix u-xl-mode" data-lang="en">
+    <header class="u-clearfix u-header u-header" id="header">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <a href="index.html" class="u-image u-logo u-image-1">
+                <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+            </a>
+            <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" role="navigation" aria-label="Menu navigation">
+                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="#" tabindex="-1" aria-label="Open menu" aria-controls="8bd3">
+                        <svg class="u-svg-link" viewBox="0 0 24 24">
+                            <use xlink:href="#menu-hamburger"></use>
+                        </svg>
+                        <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect y="1" width="16" height="2"></rect>
+                                <rect y="7" width="16" height="2"></rect>
+                                <rect y="13" width="16" height="2"></rect>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container">
+                    <ul class="u-nav u-unstyled u-nav-1" role="menubar">
+                        <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                                href="index.html" style="padding: 10px 20px;">Home</a>
+                        </li>
+
+                        <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                                href="theory.html" style="padding: 10px 20px;">Theory</a>
+                        </li>
+                        </li>
+                        <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                                href="lab.html" style="padding: 10px 20px;">Lab</a>
+                        </li>
+                        <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                                href="#" style="padding: 10px 20px;">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse" id="8bd3" role="region" aria-label="Menu panel">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                            <div class="u-menu-close" tabindex="-1" aria-label="Close menu"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2" role="menubar">
+                                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                        class="u-button-style u-nav-link" href="index.html">Home</a>
+                                </li>
+                                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                        class="u-button-style u-nav-link" href="#">About</a>
+                                </li>
+                                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                        class="u-button-style u-nav-link" href="theory.html">Theory</a>
+                                </li>
+                                </li>
+                                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                        class="u-button-style u-nav-link" href="lab.html">Lab</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="u-clearfix u-section-1">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-text u-text-default u-title">Chapter 3:Random Variables and Probability Distributions</h1>
+            <div class="u-container-style u-white u-radius-20 u-shape-round"
+                style="padding: 30px; margin-top: 20px; color: #111;">
+                <div class="u-container-layout">
+                    <p class="u-text u-text-3"><b>Planned Hours:</b> 07</p>
+                    <p class="u-text u-text-3">A random variable is a function that assigns a real number to every
+                        outcome of a random experiment.</p>
+                    <p class="u-text u-text-4"><b>Example:</b><br>
+                        Tossing a coin 3 times → Let X = number of heads obtained.</p>
+
+                    <h2 class="u-text u-text-default u-text-5">1. Types of Random Variables (CO2 – L1)</h2>
+                    <p class="u-text u-text-6">Random variables are classified into:</p>
+
+                    <h3 class="u-text u-text-default u-text-7">(a) Discrete Random Variable</h3>
+                    <p class="u-text u-text-8">Takes countable values.</p>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 20px;">
+                        <tr style="border-bottom: 1px solid #ccc;">
+                            <th style="padding: 10px; text-align: left;">Example</th>
+                            <th style="padding: 10px; text-align: left;">Possible values</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Number of heads in 3 coin tosses</td>
+                            <td style="padding: 10px;">0, 1, 2, 3</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Number of defective items</td>
+                            <td style="padding: 10px;">0, 1, 2, ...</td>
+                        </tr>
+                    </table>
+
+                    <h3 class="u-text u-text-default u-text-9">(b) Continuous Random Variable</h3>
+                    <p class="u-text u-text-10">Takes any value in an interval.</p>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 20px;">
+                        <tr style="border-bottom: 1px solid #ccc;">
+                            <th style="padding: 10px; text-align: left;">Example</th>
+                            <th style="padding: 10px; text-align: left;">Values</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Time to complete a job</td>
+                            <td style="padding: 10px;">Any real value</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Height of students</td>
+                            <td style="padding: 10px;">150.3, 150.35, 150.356…</td>
+                        </tr>
+                    </table>
+
+                    <h2 class="u-text u-text-default u-text-11">2. Probability Distribution, CDF & Graph (CO2 – L2)</h2>
+
+                    <h3 class="u-text u-text-default u-text-12">(a) Probability Distribution of a Discrete Random
+                        Variable</h3>
+                    <p class="u-text u-text-13">If X is discrete, its probability distribution is given by:</p>
+                    <p class="u-text u-text-14"><b>P(X = x<sub>i</sub>) = p<sub>i</sub>, ∑p<sub>i</sub> = 1</b></p>
+
+                    <p class="u-text u-text-15">Example: Tossing a coin twice, X = number of heads.</p>
+                    <table
+                        style="width: 50%; border-collapse: collapse; margin-top: 10px; margin-bottom: 20px; border: 1px solid #eee;">
+                        <tr>
+                            <th style="padding: 8px; border: 1px solid #ccc;">X</th>
+                            <td style="padding: 8px; border: 1px solid #ccc; text-align: center;">0</td>
+                            <td style="padding: 8px; border: 1px solid #ccc; text-align: center;">1</td>
+                            <td style="padding: 8px; border: 1px solid #ccc; text-align: center;">2</td>
+                        </tr>
+                        <tr>
+                            <th style="padding: 8px; border: 1px solid #ccc;">P(X)</th>
+                            <td style="padding: 8px; border: 1px solid #ccc; text-align: center;">1/4</td>
+                            <td style="padding: 8px; border: 1px solid #ccc; text-align: center;">1/2</td>
+                            <td style="padding: 8px; border: 1px solid #ccc; text-align: center;">1/4</td>
+                        </tr>
+                    </table>
+
+                    <h3 class="u-text u-text-default u-text-16">(b) Cumulative Distribution Function (CDF)</h3>
+                    <p class="u-text u-text-17">F(x) = P(X ≤ x)</p>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 20px;">
+                        <tr style="border-bottom: 1px solid #ccc;">
+                            <th style="padding: 10px; text-align: left;">x</th>
+                            <th style="padding: 10px; text-align: left;">F(x)</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">x < 0</td>
+                            <td style="padding: 10px;">0</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">0 ≤ x < 1</td>
+                            <td style="padding: 10px;">1/4</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">1 ≤ x < 2</td>
+                            <td style="padding: 10px;">3/4</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">x ≥ 2</td>
+                            <td style="padding: 10px;">1</td>
+                        </tr>
+                    </table>
+                    <p class="u-text u-text-18">The CDF graph is a step function.</p>
+
+                    <h2 class="u-text u-text-default u-text-19">3. Mean and Variance (CO2 – L3)</h2>
+
+                    <h3 class="u-text u-text-default u-text-20">(a) For Discrete Random Variable</h3>
+                    <p class="u-text u-text-21">μ = E(X) = ∑ x<sub>i</sub> p<sub>i</sub></p>
+                    <p class="u-text u-text-22">σ² = Var(X) = ∑ x<sub>i</sub>² p<sub>i</sub> - μ²</p>
+
+                    <h3 class="u-text u-text-default u-text-23">(b) For Continuous Random Variable</h3>
+                    <p class="u-text u-text-24">μ = ∫<sub>-∞</sub><sup>∞</sup> x f(x) dx</p>
+                    <p class="u-text u-text-25">σ² = ∫<sub>-∞</sub><sup>∞</sup> x² f(x) dx - μ²</p>
+
+                    <h2 class="u-text u-text-default u-text-26">4. Application of Probability Distributions (CO2 – L3)
+                    </h2>
+                    <p class="u-text u-text-27">Used in:</p>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 20px;">
+                        <tr style="border-bottom: 1px solid #ccc;">
+                            <th style="padding: 10px; text-align: left;">Distribution</th>
+                            <th style="padding: 10px; text-align: left;">Application</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Binomial</td>
+                            <td style="padding: 10px;">No. of successes in fixed trials</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Poisson</td>
+                            <td style="padding: 10px;">No. of arrivals in fixed time</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Normal</td>
+                            <td style="padding: 10px;">Heights, weights, errors</td>
+                        </tr>
+                    </table>
+
+                    <h2 class="u-text u-text-default u-text-28">5. Marginal & Conditional Distributions (CO2 – L3)</h2>
+                    <p class="u-text u-text-29"><b>Joint Distribution:</b><br>
+                        P(X = x<sub>i</sub>, Y = y<sub>j</sub>)</p>
+
+                    <p class="u-text u-text-30"><b>Marginal Distribution:</b><br>
+                        P(X = x<sub>i</sub>) = ∑<sub>j</sub> P(X = x<sub>i</sub>, Y = y<sub>j</sub>)<br>
+                        P(Y = y<sub>j</sub>) = ∑<sub>i</sub> P(X = x<sub>i</sub>, Y = y<sub>j</sub>)</p>
+
+                    <p class="u-text u-text-31"><b>Conditional Distribution:</b><br>
+                        P(X = x<sub>i</sub> | Y = y<sub>j</sub>) = P(X = x<sub>i</sub>, Y = y<sub>j</sub>) / P(Y =
+                        y<sub>j</sub>)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="footer">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the Text Element.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

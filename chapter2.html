@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Probability">
+    <meta name="description" content="">
+    <title>Probability</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="index.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 8.1.4, nicepage.com">
+
+    <link id="u-page-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/default-logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Probability">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body class="u-body u-clearfix u-xl-mode" data-lang="en">
+    <header class="u-clearfix u-header u-header" id="header">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <a href="index.html" class="u-image u-logo u-image-1">
+                <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+            </a>
+            <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" role="navigation" aria-label="Menu navigation">
+                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="#" tabindex="-1" aria-label="Open menu" aria-controls="8bd3">
+                        <svg class="u-svg-link" viewBox="0 0 24 24">
+                            <use xlink:href="#menu-hamburger"></use>
+                        </svg>
+                        <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect y="1" width="16" height="2"></rect>
+                                <rect y="7" width="16" height="2"></rect>
+                                <rect y="13" width="16" height="2"></rect>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container">
+                    <ul class="u-nav u-unstyled u-nav-1" role="menubar">
+                        <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                                href="index.html" style="padding: 10px 20px;">Home</a>
+                        </li>
+
+                        <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                                href="theory.html" style="padding: 10px 20px;">Theory</a>
+                        </li>
+                        </li>
+                        <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                                href="lab.html" style="padding: 10px 20px;">Lab</a>
+                        </li>
+                        <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                                href="#" style="padding: 10px 20px;">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse" id="8bd3" role="region" aria-label="Menu panel">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                            <div class="u-menu-close" tabindex="-1" aria-label="Close menu"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2" role="menubar">
+                                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                        class="u-button-style u-nav-link" href="index.html">Home</a>
+                                </li>
+                                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                        class="u-button-style u-nav-link" href="#">About</a>
+                                </li>
+                                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                        class="u-button-style u-nav-link" href="theory.html">Theory</a>
+                                </li>
+                                </li>
+                                <li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem"
+                                        class="u-button-style u-nav-link" href="lab.html">Lab</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="u-clearfix u-section-1">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-text u-text-default u-title">Chapter 2:Probability</h1>
+            <div class="u-container-style u-white u-radius-20 u-shape-round"
+                style="padding: 30px; margin-top: 20px; color: #111;">
+                <div class="u-container-layout">
+                    <h2 class="u-text u-text-default u-text-2">1. Introduction to Probability</h2>
+                    <p class="u-text u-text-3">Probability is a fundamental concept in mathematics that deals with
+                        uncertainty. In real life, many events cannot be predicted with complete certainty. For example,
+                        weather forecasting, stock market behavior, system failures, and exam results all involve
+                        uncertainty. Probability provides a mathematical framework to quantify the likelihood of
+                        occurrence of such events.</p>
+                    <p class="u-text u-text-4">In engineering, science, economics, and computer science, probability is
+                        used to analyze risk, predict outcomes, and make informed decisions. This chapter introduces the
+                        basic ideas of probability and essential probability laws that form the foundation for advanced
+                        statistical analysis.</p>
+
+                    <h2 class="u-text u-text-default u-text-5">2. Definition of Probability</h2>
+                    <p class="u-text u-text-6">Probability is a numerical measure that indicates how likely an event is
+                        to occur.</p>
+
+                    <h3 class="u-text u-text-default u-text-7">Classical Definition</h3>
+                    <p class="u-text u-text-8">If an experiment has a finite number of equally likely outcomes, then the
+                        probability of an event A is given by:</p>
+                    <p class="u-text u-text-9"><b>P(A) = Number of favourable outcomes / Total number of possible
+                            outcomes</b></p>
+
+                    <h3 class="u-text u-text-default u-text-10">Important Properties</h3>
+                    <ul class="u-text u-text-11">
+                        <li>0 ≤ P(A) ≤ 1</li>
+                        <li>P(A) = 0 means the event is impossible</li>
+                        <li>P(A) = 1 means the event is certain</li>
+                    </ul>
+
+                    <h2 class="u-text u-text-default u-text-12">3. Interpretation of Probability Value</h2>
+                    <p class="u-text u-text-13">The value of probability always lies between 0 and 1, and its magnitude
+                        represents the likelihood of occurrence of an event.</p>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 20px; margin-bottom: 20px;">
+                        <tr style="border-bottom: 1px solid #ccc;">
+                            <th style="padding: 10px; text-align: left;">Probability Value</th>
+                            <th style="padding: 10px; text-align: left;">Interpretation</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">0</td>
+                            <td style="padding: 10px;">Impossible event</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Close to 0</td>
+                            <td style="padding: 10px;">Rare event</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">0.5</td>
+                            <td style="padding: 10px;">Equally likely</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Close to 1</td>
+                            <td style="padding: 10px;">Highly likely</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">1</td>
+                            <td style="padding: 10px;">Certain event</td>
+                        </tr>
+                    </table>
+
+                    <p class="u-text u-text-14"><b>Example:</b><br>
+                        Probability of getting head in a fair coin toss = 0.5<br>
+                        Probability of rain tomorrow = 0.8 (high chance)<br>
+                        Thus, probability helps in decision-making under uncertainty.</p>
+
+                    <h2 class="u-text u-text-default u-text-15">4. Addition Rule of Probability</h2>
+                    <p class="u-text u-text-16">The addition rule is used to find the probability that at least one of
+                        two or more events occurs.</p>
+
+                    <h3 class="u-text u-text-default u-text-17">Case 1: Mutually Exclusive Events</h3>
+                    <p class="u-text u-text-18">Two events are said to be mutually exclusive if they cannot occur at the
+                        same time.</p>
+                    <p class="u-text u-text-19"><b>P(A ∪ B) = P(A) + P(B)</b></p>
+                    <p class="u-text u-text-20">Example: When tossing a die, the events “getting 2” and “getting 5” are
+                        mutually exclusive.</p>
+
+                    <h3 class="u-text u-text-default u-text-21">Case 2: Non-Mutually Exclusive Events</h3>
+                    <p class="u-text u-text-22">If events can occur simultaneously, then:</p>
+                    <p class="u-text u-text-23"><b>P(A ∪ B) = P(A) + P(B) - P(A ∩ B)</b></p>
+                    <p class="u-text u-text-24">This formula avoids double counting of common outcomes.</p>
+
+                    <h3 class="u-text u-text-default u-text-25">Applications of Addition Rule</h3>
+                    <ul class="u-text u-text-26">
+                        <li>Reliability analysis of systems</li>
+                        <li>Risk assessment</li>
+                        <li>Probability of selecting at least one defective item</li>
+                    </ul>
+
+                    <h2 class="u-text u-text-default u-text-27">5. Multiplication Rule of Probability</h2>
+                    <p class="u-text u-text-28">The multiplication rule is used to find the probability that two or more
+                        events occur together.</p>
+
+                    <h3 class="u-text u-text-default u-text-29">Case 1: Independent Events</h3>
+                    <p class="u-text u-text-30">Two events are independent if the occurrence of one does not affect the
+                        occurrence of the other.</p>
+                    <p class="u-text u-text-31"><b>P(A ∩ B) = P(A) × P(B)</b></p>
+                    <p class="u-text u-text-32">Example: Tossing two coins — the result of one toss does not affect the
+                        other.</p>
+
+                    <h3 class="u-text u-text-default u-text-33">Case 2: Dependent Events</h3>
+                    <p class="u-text u-text-34">Events are dependent if the occurrence of one affects the probability of
+                        the other.</p>
+                    <p class="u-text u-text-35"><b>P(A ∩ B) = P(A) × P(B | A)</b></p>
+                    <p class="u-text u-text-36">where P(B | A) is the conditional probability of B given A.</p>
+
+                    <h3 class="u-text u-text-default u-text-37">Applications of Multiplication Rule</h3>
+                    <ul class="u-text u-text-38">
+                        <li>Sequential experiments</li>
+                        <li>Quality control</li>
+                        <li>Reliability of multi-component systems</li>
+                    </ul>
+
+                    <h2 class="u-text u-text-default u-text-39">6. Bayes’ Rule</h2>
+                    <h3 class="u-text u-text-default u-text-40">Introduction</h3>
+                    <p class="u-text u-text-41">Bayes’ Rule is one of the most important results in probability theory.
+                        It allows us to update probabilities when new information becomes available.</p>
+
+                    <h3 class="u-text u-text-default u-text-42">Statement of Bayes’ Rule</h3>
+                    <p class="u-text u-text-43">If A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>n</sub> are mutually
+                        exclusive and exhaustive events and B is any event with P(B) > 0, then:</p>
+                    <p class="u-text u-text-44"><b>P(A<sub>i</sub> | B) = [P(A<sub>i</sub>) P(B | A<sub>i</sub>)] / [∑
+                            P(A<sub>j</sub>) P(B | A<sub>j</sub>)]</b></p>
+
+                    <h3 class="u-text u-text-default u-text-45">Interpretation</h3>
+                    <ul class="u-text u-text-46">
+                        <li>Prior probability → probability before observing data</li>
+                        <li>Posterior probability → updated probability after observing data</li>
+                    </ul>
+                    <p class="u-text u-text-47">It helps revise beliefs based on evidence.</p>
+
+                    <h3 class="u-text u-text-default u-text-48">Applications of Bayes’ Rule</h3>
+                    <ul class="u-text u-text-49">
+                        <li>Medical diagnosis (disease testing)</li>
+                        <li>Machine learning and AI</li>
+                        <li>Spam filtering</li>
+                        <li>Fault detection in engineering systems</li>
+                        <li>Decision-making under uncertainty</li>
+                    </ul>
+
+                    <h2 class="u-text u-text-default u-text-50">7. Importance of Probability in Engineering and Data
+                        Science</h2>
+                    <ul class="u-text u-text-51">
+                        <li>Helps model uncertain systems</li>
+                        <li>Forms the basis for statistics and machine learning</li>
+                        <li>Used in simulations and predictive analytics</li>
+                        <li>Essential for risk and reliability analysis</li>
+                    </ul>
+
+                    <h2 class="u-text u-text-default u-text-52">8. Conclusion</h2>
+                    <p class="u-text u-text-53">This chapter introduced the fundamental principles of probability,
+                        including its definition, interpretation, and important probability rules. The addition rule,
+                        multiplication rule, and Bayes’ rule provide powerful tools to analyze real-world uncertain
+                        situations logically and mathematically. Understanding these concepts is essential for advanced
+                        studies in probability, statistics, and data-driven decision-making.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="footer">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the Text Element.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
